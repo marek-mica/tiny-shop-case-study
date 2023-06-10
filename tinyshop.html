@@ -15690,7 +15690,7 @@ Done.
 <span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
 <span class="k">FROM</span><span class="w"> </span><span class="n">product_counts</span>
 <span class="k">WHERE</span><span class="w"> </span><span class="n">total_quantity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span>
-<span class="w">    </span><span class="k">SELECT</span><span class="w"> </span><span class="k">MAX</span><span class="p">(</span><span class="n">total_quantity</span><span class="p">)</span>
+<span class="w">    </span><span class="k">SELECT</span><span class="w"> </span><span class="k">MIN</span><span class="p">(</span><span class="n">total_quantity</span><span class="p">)</span>
 <span class="w">    </span><span class="k">FROM</span><span class="w"> </span><span class="n">product_counts</span>
 <span class="p">);</span>
 </pre></div>
@@ -15715,7 +15715,7 @@ Done.
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre> * postgresql://marekmica:***@localhost/tinyshop
-3 rows affected.
+10 rows affected.
 </pre>
 </div>
 </div>
@@ -15737,16 +15737,44 @@ Done.
     </thead>
     <tbody>
         <tr>
-            <td>3</td>
-            <td>4</td>
-        </tr>
-        <tr>
+            <td>11</td>
             <td>2</td>
-            <td>4</td>
         </tr>
         <tr>
-            <td>1</td>
+            <td>9</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>2</td>
+        </tr>
+        <tr>
             <td>4</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>2</td>
         </tr>
     </tbody>
 </table>
